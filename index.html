@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>The Wedding of Imam & Lutfi</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #F6F1EA; }
+    iframe {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="gas-frame" allow="autoplay; clipboard-write; fullscreen" allowfullscreen></iframe>
+
+  <script>
+    var baseGasUrl = "https://script.google.com/macros/s/AKfycbwaA2vnjq-5VQsRlRrOhltkkTkM02EW0pmbagEyhr2LqUocL6Ma0NFp21V_cR2ZsNKC/exec";
+    var currentSearch = window.location.search;
+    document.getElementById("gas-frame").src = currentSearch ? (baseGasUrl + currentSearch) : baseGasUrl;
+  </script>
+</body>
+</html>
